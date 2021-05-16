@@ -49,11 +49,16 @@ body {
   background-color: rgb(24, 24, 24);
 
   padding: 1.5rem 3.6rem;
+
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .VideoContainer {
   width: 55vw;
   min-width: 340px;
+
+  margin-right: 2rem;
 }
 
 .Video {
@@ -95,4 +100,40 @@ body {
 
 .Comments {
   margin: 1rem 0;
+}
+
+.Navigation {
+  width: 30vw;
+  min-width: 300px;
+
+  padding-top: 3rem;
+}
+
+.VideoLink {
+  display: flex;
+
+  margin: 1rem 0;
+}
+
+.VideoLink__thumbnail {
+  display: block;
+  width: 168px;
+  height: 94px;
+
+  margin-right: 10px;
+}
+
+.VideoLink__text {
+  color: white;
+  text-decoration: none;
+}
+
+.ChannelName {
+  color: grey;
+  font-size: 0.8rem;
+}
+
+.Stats {
+  color: grey;
+  font-size: 0.8rem;
 }
