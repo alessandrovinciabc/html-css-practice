@@ -6,3 +6,6 @@ This is a collection of projects done as practice with HTML/CSS while following 
 
 Youtube Mock with embedded video
 ![Youtube mock](screenshot/yuptube.png)
+
+Clone of Intuit's signup form
+![Intuit signup form clone](screenshot/intuit-form-clone.png)
