@@ -150,6 +150,22 @@ body {
 
 /* Form */
 
+.form__header {
+  color: rgb(98, 98, 101);
+  font-weight: normal;
+  font-size: 1.4rem;
+
+  text-align: center;
+
+  margin-bottom: 20px;
+}
+
+.form__description {
+  text-align: center;
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
 /* Footer */
 .Footer__links > .Link {
   margin: 5px;
