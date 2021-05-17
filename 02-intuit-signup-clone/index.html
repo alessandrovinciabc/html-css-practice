@@ -8,5 +8,20 @@
 
     <link rel="stylesheet" href="main.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="Header"></header>
+    <section class="Signup">
+      <header class="Signup__header"></header>
+      <form class="Signup__form" action="/" method="POST"></form>
+    </section>
+    <footer class="Footer"></footer>
+
+    <script>
+      let form = document.querySelector('.Signup__form');
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+      });
+    </script>
+  </body>
 </html>

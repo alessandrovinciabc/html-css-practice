@@ -1,3 +1,4 @@
+/*Reset*/
 *,
 *::before,
 *::after {
@@ -9,4 +10,47 @@
 
 body {
   font-size: 16px;
+}
+
+/*Styles*/
+
+/* High Level Containers */
+.Header {
+  background-color: rgb(202, 69, 69);
+  height: 60px;
+
+  padding: 10px 30px;
+}
+
+.Signup {
+  margin: 1rem 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+}
+
+.Footer {
+  height: 3rem;
+  background-color: rgb(75, 197, 96);
+}
+
+/* Signup Section */
+
+.Signup__header {
+  height: 5rem;
+  background-color: rgb(94, 91, 226);
+
+  width: 318px;
+}
+
+.Signup__form {
+  width: 378px;
+  min-height: 641px;
+
+  background-color: rgb(209, 199, 59);
+
+  padding: 30px;
 }
