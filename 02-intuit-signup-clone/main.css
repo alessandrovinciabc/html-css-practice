@@ -166,6 +166,39 @@ body {
   color: rgba(0, 0, 0, 0.6);
 }
 
+.form__inputs {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 1rem;
+}
+
+.input__item {
+  margin-bottom: 2rem;
+}
+
+.form__inputs label {
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.form__inputs input {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  height: 1.9rem;
+  width: 100%;
+  border-radius: 3px;
+
+  margin-top: 7px;
+}
+
+.text__optional {
+  font-size: 0.8rem;
+}
+
+.text__small {
+  font-size: 0.6rem;
+}
+
 /* Footer */
 .Footer__links > .Link {
   margin: 5px;
