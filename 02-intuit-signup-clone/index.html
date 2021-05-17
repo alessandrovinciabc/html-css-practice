@@ -9,7 +9,13 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <header class="Header"></header>
+    <header class="Header">
+      <div class="Header__text">
+        Already have an Intuit account?<br />
+        <a class="Header__link" href="#">I forgot my User ID or Password</a>
+      </div>
+      <button class="Header__cta">Sign in</button>
+    </header>
     <section class="Signup">
       <header class="Signup__header">
         <section class="header__logos">
@@ -36,7 +42,17 @@
       </header>
       <form class="Signup__form" action="/" method="POST"></form>
     </section>
-    <footer class="Footer"></footer>
+    <footer class="Footer">
+      <div class="Footer__links">
+        <a class="Link" href="#">Legal</a>
+        <a class="Link" href="#">Privacy</a>
+        <a class="Link" href="#">Security</a>
+      </div>
+      © 2021 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB, TurboTax,
+      ProConnect and Mint are registered trademarks of Intuit Inc.<br />
+      Terms and conditions, features, support, pricing, and service options
+      subject to change without notice.
+    </footer>
 
     <script>
       let form = document.querySelector('.Signup__form');
