@@ -10,6 +10,8 @@
 
 body {
   font-size: 16px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /*Styles*/
@@ -41,9 +43,10 @@ body {
 
 .Signup__header {
   height: 5rem;
-  background-color: rgb(94, 91, 226);
 
   width: 318px;
+
+  --header-color: rgb(144, 147, 153);
 }
 
 .Signup__form {
@@ -53,4 +56,46 @@ body {
   background-color: rgb(209, 199, 59);
 
   padding: 30px;
+}
+
+/* Signup Header */
+
+.header__logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo--text {
+  color: var(--header-color);
+  font-size: 2rem;
+
+  transform: scaleX(1.2);
+}
+
+.logo-group {
+  display: flex;
+
+  margin-top: 0.4rem;
+}
+
+.logo-group__item {
+  display: flex;
+  align-items: center;
+}
+
+.logo-group__logo {
+  height: 23px;
+  width: 23px;
+
+  margin-right: 4px;
+  margin-left: 8px;
+}
+
+.logo-group__text {
+  color: var(--header-color);
+
+  font-size: 1rem;
+  font-weight: normal;
 }
