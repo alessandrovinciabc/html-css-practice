@@ -16,22 +16,78 @@ body {
 
 /*Styles*/
 
-* {
-  border: 1px solid red;
-}
-
 .Navigation {
   position: absolute;
   width: 77%;
-  height: 2.4rem;
+  height: 2.3rem;
 
   top: 1.2rem;
   left: 50%;
   transform: translateX(-50%);
+
+  border-radius: 5px;
+
+  display: grid;
+  grid-template-columns: repeat(8, 1fr) 1.5fr;
+}
+
+.Navigation > *:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.Navigation > *:last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+.Navigation > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(
+    to bottom,
+    rgb(120, 120, 120),
+    rgb(120, 120, 120) 50%,
+    rgb(92, 92, 92) 50%,
+    rgb(120, 120, 120)
+  );
+
+  border: 1px solid rgb(90, 90, 90);
+}
+
+.Navigation > a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.8rem;
+  text-shadow: 0 -1px 1px black;
+}
+
+.Search-Container {
+  padding: 0 15px;
+}
+
+.Search-Container > input {
+  background: transparent;
+  border-radius: 10px;
+  border: none;
+  box-shadow: inset 0 1px 2px rgb(40, 40, 40);
+  outline: none;
+
+  height: 1.2rem;
+
+  padding: 0 10px;
+  color: white;
+}
+
+.Apple-Logo {
+  height: 21px;
+  width: 21px;
 }
 
 .Hero {
   height: 88vh;
+
+  background: url(images/your_verse_hero.jpg) no-repeat bottom;
 }
 
 .Promos {
