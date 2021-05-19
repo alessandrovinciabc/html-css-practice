@@ -41,6 +41,8 @@ body {
   padding: 5px 15px;
 
   background-color: white;
+
+  z-index: 1;
 }
 
 .Header__MenuBtn {
@@ -163,7 +165,8 @@ body {
 }
 
 .Illustration {
-  width: 75%;
+  width: 947px;
+  height: 577px;
 }
 
 .Illustration__Content {
@@ -235,4 +238,20 @@ h3 {
   color: rgba(0, 0, 0, 0.6);
 
   line-height: 1.4;
+}
+
+.Illustration__Author {
+  margin-top: 5rem;
+  font-size: 1.4rem;
+  color: var(--text-color);
+  width: max-content;
+}
+
+.Illustration__Author::before {
+  display: block;
+  content: '';
+
+  width: 25%;
+  height: 5px;
+  border-top: 1.5px solid black;
 }
