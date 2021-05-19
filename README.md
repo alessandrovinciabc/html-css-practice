@@ -9,3 +9,6 @@ Youtube Mock with embedded video
 
 Clone of Intuit's signup form
 ![Intuit signup form clone](screenshot/intuit-form-clone.png)
+
+New York Times cloned article
+![New York Times cloned article](screenshot/nytimes-screen.png)
