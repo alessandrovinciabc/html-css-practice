@@ -39,6 +39,8 @@ body {
   justify-items: flex-end;
 
   padding: 5px 15px;
+
+  background-color: white;
 }
 
 .Header__MenuBtn {
