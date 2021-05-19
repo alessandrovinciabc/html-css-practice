@@ -125,3 +125,39 @@ body {
   color: rgba(0, 0, 0, 0.5);
   font-size: 1.4rem;
 }
+
+.Article__Details {
+  width: 50%;
+  margin: 2rem 0;
+}
+
+.Author {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+
+  color: var(--text-color);
+}
+
+.Author__Name {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.Date {
+  font-size: 1.3rem;
+}
+
+.Article__Text {
+  width: 50%;
+
+  font-size: 1.9rem;
+  color: var(--text-color);
+}
+
+.Article__Text > p {
+  margin: 2.5rem 0;
+}
+
+.Article__Text > h2 {
+  font-size: 2rem;
+}
