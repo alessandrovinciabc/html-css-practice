@@ -13,3 +13,40 @@ body {
     'Lucida Sans', Arial, sans-serif;
   font-size: 16px;
 }
+
+/*Styles*/
+
+* {
+  border: 1px solid red;
+}
+
+.Navigation {
+  position: absolute;
+  width: 77%;
+  height: 2.4rem;
+
+  top: 1.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.Hero {
+  height: 88vh;
+}
+
+.Promos {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.Promos > img {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+}
+
+.Footer {
+  height: 4rem;
+}
