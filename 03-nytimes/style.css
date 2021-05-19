@@ -161,3 +161,78 @@ body {
 .Article__Text > h2 {
   font-size: 2rem;
 }
+
+.Illustration {
+  width: 75%;
+}
+
+.Illustration__Content {
+  width: 100%;
+
+  position: relative;
+}
+
+.Illustration__img {
+  width: 100%;
+}
+
+.Illustration__Overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    '. . . .'
+    'content1 content1 content1 content1'
+    '. . . .'
+    'content2 content2 content2 content2';
+}
+
+.Illustration__Content1 {
+  grid-area: content1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.Illustration__Content2 {
+  grid-area: content2;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.Content__Text > h3 {
+  color: black;
+  font-size: 1.2rem;
+}
+
+.Content__Text > p,
+h3 {
+  display: inline;
+}
+
+.Content__Text {
+  font-size: 1.3rem;
+  color: var(--text-color);
+
+  line-height: 1.4;
+
+  padding: 5px;
+}
+
+.Illustration__Title {
+  font-size: 1.8rem;
+}
+
+.Illustration__Description {
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.6);
+
+  line-height: 1.4;
+}
