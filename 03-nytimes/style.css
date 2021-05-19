@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@700&display=swap');
+
 /*Reset*/
 *,
 *::before,
@@ -17,6 +19,10 @@ body {
     'Lucida Sans', Arial, sans-serif;
 }
 
+:root {
+  --text-color: rgba(0, 0, 0, 0.8);
+}
+
 .Header {
   position: fixed;
   top: 0;
@@ -25,6 +31,48 @@ body {
   width: 100%;
 
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  justify-items: flex-end;
+
+  padding: 5px 15px;
+}
+
+.Header__MenuBtn {
+  border: 0;
+  background: transparent;
+  font-size: 2.4rem;
+
+  color: var(--text-color);
+}
+
+.Header__Logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-family: 'Grenze Gotisch', cursive;
+  font-size: 2.5rem;
+}
+
+.Button {
+  border: none;
+  padding: 10px 10px 6px;
+  font-size: 1.1rem;
+  font-weight: bold;
+
+  text-transform: uppercase;
+  border-radius: 3px;
+
+  margin: 0 5px;
+}
+
+.Button--blue {
+  background-color: rgb(86, 123, 149);
+  border: 1px solid rgb(50, 104, 145);
+  color: white;
 }
 
 .MainSection {
