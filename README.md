@@ -12,3 +12,6 @@ Clone of Intuit's signup form
 
 New York Times cloned article
 ![New York Times cloned article](screenshot/nytimes-screen.png)
+
+Apple 2014
+![Apple 2014 page](screenshot/apple-2014.png)
