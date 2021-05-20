@@ -51,6 +51,10 @@ body {
   background-color: var(--high);
 }
 
+.Header__nav > *:nth-last-child(3) {
+  background-color: var(--medium);
+}
+
 .nav__item {
   background-color: var(--low);
   height: 50px;
@@ -59,4 +63,15 @@ body {
 
 .Category-nav {
   height: 3.5rem;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 20px;
+}
+
+.Category-nav > * {
+  width: 100%;
+  height: 50px;
+
+  background-color: var(--low);
 }
