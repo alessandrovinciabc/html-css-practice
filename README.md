@@ -15,3 +15,6 @@ New York Times cloned article
 
 Apple 2014
 ![Apple 2014 page](screenshot/apple-2014.png)
+
+Heatmap
+![Heatmap](screenshot/heatmap.png)
