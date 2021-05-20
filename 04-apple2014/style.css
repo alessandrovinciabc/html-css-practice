@@ -47,8 +47,8 @@ body {
   background: linear-gradient(
     to bottom,
     rgb(120, 120, 120),
-    rgb(120, 120, 120) 50%,
     rgb(92, 92, 92) 50%,
+    rgb(120, 120, 120) 50%,
     rgb(120, 120, 120)
   );
 
