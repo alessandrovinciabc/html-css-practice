@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@400;700&display=swap');
+
 /*Reset*/
 *,
 *::before,
@@ -9,8 +11,7 @@
 }
 
 body {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: 'KoHo', sans-serif;
   font-size: 16px;
 }
 
@@ -51,6 +52,7 @@ body {
 
 .Header__nav > *:nth-last-child(2) {
   background-color: var(--high);
+  font-weight: bold;
   display: grid;
   place-items: center;
 }
@@ -122,6 +124,7 @@ body {
 
 .Main__Newsletter::after {
   content: 'Abc Defg';
+  font-weight: bold;
   display: grid;
   place-items: center;
 
@@ -155,7 +158,7 @@ body {
 .Article__Title::before {
   display: block;
   content: 'My Name';
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 2rem;
 
   width: 150px;
@@ -167,7 +170,8 @@ body {
 .Article__Title::after {
   display: block;
   content: 'Super interesting article title that you need to read';
-  font-size: 2rem;
+  font-size: 1.7rem;
+  font-weight: bold;
 
   margin-left: 2rem;
 
