@@ -22,6 +22,13 @@ body {
   --high: rgb(25, 25, 25);
 }
 
+*,
+*::before,
+*::after {
+  color: white;
+  font-size: 1.4rem;
+}
+
 .Header {
   height: 6.5rem;
 
@@ -44,6 +51,8 @@ body {
 
 .Header__nav > *:nth-last-child(2) {
   background-color: var(--high);
+  display: grid;
+  place-items: center;
 }
 
 .Header__nav > *:nth-last-child(3) {
@@ -112,7 +121,9 @@ body {
 }
 
 .Main__Newsletter::after {
-  content: '';
+  content: 'Abc Defg';
+  display: grid;
+  place-items: center;
 
   position: absolute;
 
@@ -143,7 +154,8 @@ body {
 
 .Article__Title::before {
   display: block;
-  content: '';
+  content: 'My Name';
+  font-size: 1.2rem;
   margin: 2rem;
 
   width: 150px;
@@ -154,7 +166,8 @@ body {
 
 .Article__Title::after {
   display: block;
-  content: '';
+  content: 'Super interesting article title that you need to read';
+  font-size: 2rem;
 
   margin-left: 2rem;
 
