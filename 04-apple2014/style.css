@@ -21,7 +21,7 @@ body {
   width: 77%;
   height: 2.3rem;
 
-  top: 1.2rem;
+  top: 5rem;
   left: 50%;
   transform: translateX(-50%);
 
@@ -88,6 +88,62 @@ body {
   height: 88vh;
 
   background: url(images/your_verse_hero.jpg) no-repeat bottom;
+
+  display: grid;
+  place-items: center center;
+  align-content: center;
+  padding-top: 1.2rem;
+
+  color: white;
+}
+
+.Hero > h1 {
+  font-size: 3.3rem;
+  font-weight: normal;
+}
+
+.Hero > h2 {
+  width: 70%;
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: normal;
+
+  margin: 2rem 0;
+}
+
+.Hero a {
+  font-weight: normal;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.PlayBtn {
+  display: inline-block;
+  height: 27px;
+  width: 27px;
+
+  border: 1.4px solid white;
+  border-radius: 100%;
+
+  vertical-align: bottom;
+
+  position: relative;
+}
+
+.PlayBtn::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+
+  height: 0;
+  width: 0;
+
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  border-left: 9px solid white;
 }
 
 .Promos {
