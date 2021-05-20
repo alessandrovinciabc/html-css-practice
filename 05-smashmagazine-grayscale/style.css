@@ -15,3 +15,48 @@ body {
 }
 
 /*Styles*/
+
+/*debug*/
+* {
+  border: 1px solid red;
+}
+
+:root {
+  --low: rgb(200, 200, 200);
+  --medium: rgb(100, 100, 100);
+  --high: rgb(25, 25, 25);
+}
+
+.Header {
+  height: 6.5rem;
+
+  display: grid;
+  align-items: center;
+
+  padding: 0 3rem;
+}
+
+.Header__nav {
+  display: grid;
+  grid-template-columns: 0.5fr repeat(6, 1fr) 3fr;
+  grid-gap: 20px;
+}
+
+.Header__nav > *:last-child {
+  margin-left: 2rem;
+  background-color: var(--medium);
+}
+
+.Header__nav > *:nth-last-child(2) {
+  background-color: var(--high);
+}
+
+.nav__item {
+  background-color: var(--low);
+  height: 50px;
+  width: 80%;
+}
+
+.Category-nav {
+  height: 3.5rem;
+}
