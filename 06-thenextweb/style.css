@@ -21,19 +21,33 @@ body {
 
 .Header {
   height: 50px;
+  width: 100%;
 
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
 
   padding: 0 1rem;
+
+  background-color: rgb(247, 248, 248);
+  box-shadow: 0 2px 2rem rgb(200, 200, 200);
+
+  position: fixed;
+  top: 0;
+}
+
+.TnwLogo {
+  font-weight: bold;
+
+  transform: scaleY(0.8);
+}
+
+.TnwLogo::after {
+  content: 'TNW';
 }
 
 .Header__logo {
   font-size: 2rem;
-  font-weight: bold;
-
-  transform: scaleY(0.8);
 }
 
 .Header__nav {
@@ -51,4 +65,27 @@ body {
   text-decoration: none;
   color: rgb(80, 86, 102);
   font-size: 0.87rem;
+}
+
+.Showcase {
+  padding-top: calc(4rem + 50px);
+}
+
+.Showcase__Header {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 5rem;
+}
+
+.Showcase__Logo {
+  font-size: 6rem;
+}
+
+.Showcase__Subheading {
+  font-size: 2rem;
+  font-weight: normal;
+  color: rgb(80, 86, 102);
 }
