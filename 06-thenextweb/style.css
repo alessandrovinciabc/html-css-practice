@@ -12,3 +12,43 @@ body {
   font-family: sans-serif;
   font-size: 16px;
 }
+
+*,
+*::before,
+*::after {
+  border: 1px solid red;
+}
+
+.Header {
+  height: 50px;
+
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+
+  padding: 0 1rem;
+}
+
+.Header__logo {
+  font-size: 2rem;
+  font-weight: bold;
+
+  transform: scaleY(0.8);
+}
+
+.Header__nav {
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-transform: uppercase;
+}
+
+.nav__item {
+  margin: 0 10px;
+  text-decoration: none;
+  color: rgb(80, 86, 102);
+  font-size: 0.87rem;
+}
