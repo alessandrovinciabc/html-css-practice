@@ -274,4 +274,58 @@ body {
 }
 
 @media screen and (max-width: 766px) {
+  .Showcase {
+    position: relative;
+
+    padding-bottom: calc(196px + 4rem);
+  }
+  .Showcase__Content {
+    grid-template-columns: repeat(4, 70vw);
+    grid-template-areas: none;
+
+    justify-content: start;
+    align-items: center;
+
+    overflow: auto;
+    height: 70.3vw;
+  }
+
+  .Showcase__Content > .Showcase__Article {
+    height: 70vw;
+    width: 70vw;
+
+    grid-area: auto;
+  }
+
+  .Showcase__Article:last-child {
+    height: 196px;
+    width: calc(100% - 2rem);
+
+    position: absolute;
+    bottom: 7rem;
+    left: 1rem;
+  }
+
+  .Stories {
+    height: auto;
+  }
+
+  .Stories__Heading {
+    text-align: center;
+    font-size: 1.5rem;
+
+    margin-bottom: 3rem;
+  }
+
+  .Stories__Content {
+    grid-template-columns: none;
+  }
+
+  .Stories__Article {
+    height: 179px;
+  }
+
+  .Stories__Btn {
+    margin-top: 3rem;
+  }
 }
