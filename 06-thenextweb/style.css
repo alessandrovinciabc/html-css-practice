@@ -34,6 +34,7 @@ body {
 
   position: fixed;
   top: 0;
+  z-index: 1;
 }
 
 .TnwLogo {
@@ -88,4 +89,43 @@ body {
   font-size: 2rem;
   font-weight: normal;
   color: rgb(80, 86, 102);
+}
+
+.Showcase__Content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    'big1 big1 small1 small2'
+    'big1 big1 small1 small2'
+    'big1 big1 big2 big2'
+    'long long big2 big2'
+    'long long big2 big2';
+
+  grid-gap: 10px;
+
+  height: 632px;
+
+  padding: 0 2rem;
+  margin: 4rem 0;
+}
+
+.Showcase__Article:nth-child(1) {
+  grid-area: big1;
+}
+
+.Showcase__Article:nth-child(2) {
+  grid-area: big2;
+}
+
+.Showcase__Article:nth-child(3) {
+  grid-area: small1;
+}
+
+.Showcase__Article:nth-child(4) {
+  grid-area: small2;
+}
+
+.Showcase__Article:nth-child(5) {
+  grid-area: long;
 }
