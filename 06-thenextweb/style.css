@@ -201,3 +201,77 @@ body {
   align-content: center;
   grid-gap: 10px;
 }
+
+@media screen and (max-width: 1022px) {
+  .Header__logo {
+    color: rgb(180, 180, 180);
+  }
+
+  .Header__nav {
+    display: none;
+  }
+
+  .icon-tabler-mail {
+    display: none;
+  }
+
+  .Showcase__Header {
+    grid-auto-flow: row;
+    justify-content: center;
+    justify-items: center;
+
+    padding: 0 5rem;
+  }
+
+  .Showcase__Subheading {
+    font-size: 1.1rem;
+  }
+
+  .Showcase__Logo {
+    font-size: 9rem;
+  }
+
+  .Showcase__Content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      'big1 big1'
+      'big1 big1'
+      'small1 small2'
+      'long big2';
+  }
+
+  .Popular__Content {
+    align-self: start;
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: repeat(5, 1fr);
+
+    grid-gap: 2rem;
+  }
+
+  .Popular__Article {
+    height: 2.3rem;
+  }
+
+  .Popular {
+    min-height: 496px;
+    height: auto;
+  }
+
+  .Stories {
+    height: 1300px;
+  }
+
+  .Stories__Content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+
+  .Stories__Article {
+    min-height: 20vw;
+  }
+}
+
+@media screen and (max-width: 766px) {
+}
