@@ -187,3 +187,17 @@ body {
   border-radius: 50px;
   box-shadow: -1px -1px rgb(204, 204, 204);
 }
+
+.Footer {
+  height: 6rem;
+
+  background-color: black;
+  color: white;
+
+  font-size: 0.9rem;
+
+  display: grid;
+  place-items: center;
+  align-content: center;
+  grid-gap: 10px;
+}
