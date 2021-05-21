@@ -133,14 +133,18 @@ body {
 .Popular {
   height: 456px;
   background-color: rgb(247, 248, 248);
+
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
 }
 
 .Popular__Heading {
   text-align: center;
-  margin: 5rem 0;
 }
 
 .Popular__Content {
+  align-self: start;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 
