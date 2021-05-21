@@ -129,3 +129,22 @@ body {
 .Showcase__Article:nth-child(5) {
   grid-area: long;
 }
+
+.Popular {
+  height: 456px;
+  background-color: rgb(247, 248, 248);
+}
+
+.Popular__Heading {
+  text-align: center;
+  margin: 5rem 0;
+}
+
+.Popular__Content {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+  min-height: 150px;
+
+  padding: 0 5rem;
+}
