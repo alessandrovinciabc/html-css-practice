@@ -1,4 +1,6 @@
-/*pb-3 pt-5*/
+:root {
+  --red: rgb(247, 34, 16);
+}
 
 .SubscribeBtn {
   font-size: 0.7rem;
@@ -9,9 +11,35 @@
   height: 20px;
 }
 
+.SubHeaderNav > * {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.SubHeaderNav > *::after {
+  content: '';
+  width: 0;
+  border-right: 1px solid grey;
+  margin: 0.7rem;
+}
+
+.SubHeaderNav > *:nth-last-child(2)::after,
+.SubHeaderNav > *:last-child::after {
+  border-right: none;
+}
+
+.SubHeaderNav__flair {
+  border-left: 12px solid white;
+  border-top: 13px solid #f72210;
+  width: 5rem;
+  height: 0;
+}
+
 /* Utilities */
 .bg-red {
-  background-color: rgb(247, 34, 16);
+  background-color: var(--red);
 }
 
 .btn-yellow {
