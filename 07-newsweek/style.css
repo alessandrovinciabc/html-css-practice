@@ -1,0 +1,49 @@
+/*pb-3 pt-5*/
+
+.SubscribeBtn {
+  font-size: 0.7rem;
+}
+
+.Header__logo {
+  width: 132px;
+  height: 20px;
+}
+
+/* Utilities */
+.bg-red {
+  background-color: rgb(247, 34, 16);
+}
+
+.btn-yellow {
+  background-color: rgb(255, 228, 0);
+}
+
+/* Large Breakpoint */
+@media screen and (min-width: 992px) {
+  .SubscribeBtn {
+    font-size: initial;
+  }
+
+  .Header {
+    padding: 1.7rem 0 2rem;
+  }
+
+  .Header__logo {
+    width: auto;
+    height: auto;
+  }
+
+  .position-lg-absolute {
+    position: absolute;
+  }
+
+  .top-lg-50 {
+    top: 50%;
+  }
+  .start-lg-50 {
+    left: 50%;
+  }
+  .translate-lg-middle {
+    transform: translate(-50%, -50%);
+  }
+}
