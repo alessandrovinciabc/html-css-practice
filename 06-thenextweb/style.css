@@ -104,6 +104,28 @@ body {
   margin: 4rem 0;
 }
 
+.Showcase__Article {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: grid;
+  place-items: end center;
+  padding: 2rem;
+  color: white;
+  font-size: 1.7rem;
+
+  background: linear-gradient(to bottom, transparent, black);
+}
+
 .Showcase__Article:nth-child(1) {
   grid-area: big1;
 }
