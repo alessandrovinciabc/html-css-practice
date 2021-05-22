@@ -13,12 +13,6 @@ body {
   font-size: 16px;
 }
 
-*,
-*::before,
-*::after {
-  border: 1px solid red;
-}
-
 .Header {
   height: 50px;
   width: 100%;
@@ -150,6 +144,7 @@ body {
 
 .Popular__Heading {
   text-align: center;
+  color: rgb(167, 170, 178);
 }
 
 .Popular__Content {
@@ -157,9 +152,20 @@ body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 
+  font-size: 1.2rem;
+
   min-height: 150px;
 
   padding: 0 5rem;
+
+  counter-reset: popular;
+}
+
+.Popular__Article::before {
+  counter-increment: popular;
+  content: counter(popular) ' ';
+  font-size: 2rem;
+  color: rgb(193, 0, 144);
 }
 
 .Stories {
@@ -183,6 +189,17 @@ body {
 
 .Stories__Article {
   min-height: 175px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.Stories__img {
+  height: auto;
+  width: 100%;
+
+  object-fit: cover;
+
+  margin-bottom: 1rem;
 }
 
 .Stories__Btn {
@@ -242,12 +259,14 @@ body {
 
   .Showcase__Content {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(4, minmax(0, 1fr));
     grid-template-areas:
       'big1 big1'
       'big1 big1'
       'small1 small2'
       'long big2';
+
+    height: 824px;
   }
 
   .Popular__Content {
@@ -269,7 +288,7 @@ body {
   }
 
   .Stories {
-    height: 1300px;
+    height: 1700px;
   }
 
   .Stories__Content {
@@ -290,12 +309,14 @@ body {
   }
   .Showcase__Content {
     grid-template-columns: repeat(4, 70vw);
+    grid-template-rows: none;
     grid-template-areas: none;
 
     justify-content: start;
     align-items: center;
 
-    overflow: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
     height: 70.3vw;
   }
 
@@ -330,8 +351,19 @@ body {
     grid-template-columns: none;
   }
 
+  .Stories__img {
+    height: 150px;
+    width: 150px;
+
+    border-radius: 100%;
+
+    object-fit: cover;
+    align-self: center;
+  }
+
   .Stories__Article {
     height: 179px;
+    display: flex;
   }
 
   .Stories__Btn {
