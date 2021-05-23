@@ -21,3 +21,6 @@ Heatmap
 
 TNW
 ![The Next Web](screenshot/tnw.png)
+
+Newsweek
+![Newsweek Homepage](screenshot/newsweek.png)
