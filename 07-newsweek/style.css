@@ -2,12 +2,6 @@
   --red: rgb(247, 34, 16);
 }
 
-*,
-*::before,
-*::after {
-  outline: 1px solid red;
-}
-
 .SubscribeBtn {
   font-size: 0.7rem;
 }
@@ -58,6 +52,11 @@
 }
 
 /* Utilities */
+
+.border-grey {
+  border-color: grey;
+}
+
 .bg-red {
   background-color: var(--red);
 }
