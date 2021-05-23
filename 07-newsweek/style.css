@@ -2,6 +2,12 @@
   --red: rgb(247, 34, 16);
 }
 
+*,
+*::before,
+*::after {
+  outline: 1px solid red;
+}
+
 .SubscribeBtn {
   font-size: 0.7rem;
 }
@@ -58,6 +64,24 @@
 
 .btn-yellow {
   background-color: rgb(255, 228, 0);
+}
+
+.Top {
+  order: -1;
+}
+
+.Debate {
+  order: -1;
+}
+
+@media screen and (min-width: 768px) {
+  .Top {
+    order: 0;
+  }
+
+  .Debate {
+    order: 0;
+  }
 }
 
 /* Large Breakpoint */
