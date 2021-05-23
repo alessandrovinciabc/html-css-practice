@@ -53,6 +53,10 @@
 
 /* Utilities */
 
+.text-red {
+  color: #f72210;
+}
+
 .border-grey {
   border-color: grey;
 }
